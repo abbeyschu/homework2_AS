@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root {
+    --ColorDarkBlue: #28363D;
+    --ColorTeal: #2F575D;
+    --ColorGreen: #658B6F;
+    --ColorLightBlue: #6D9197;
+    --ColorTan: #dee1dd;
+}
+
+body {
+    background-color: var(--ColorDarkBlue);
+    color: var(--ColorTan);
+}
+
+Header {
+    padding: 20px;
+    background-color: var(--ColorTeal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+Header h1 {
+    font-family: ;
+}
+
+Header nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 25px;
+}
+
+Header nav ul li {
+    font-size: 14pt;
+    display: inline-block;
+    margin-left: 25px;
+    }
+}
+
+.MainImage {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../assets/Images/leaves.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.About {
+    background-color: var(--ColorGreen);
+    padding: 15px;
+    margin: 20px;
+}
+
+.Work {
+    background-color: var(--ColorGreen);
+    padding: 15px;
+    margin: 20px;
+}
+
+.Contact {
+    background-color: var(--ColorGreen);
+    padding: 15px;
+    margin: 20px;
+}
+
+.MainProject {
+    background-color: var(--ColorLightBlue);
+    padding: 10px;
+    margin: 15px;
+    min-height: 200px;
+}
+
+.Project1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Project2 {
+    background-color: var(--ColorLightBlue);
+    padding: 10px;
+    margin: 15px;
+    min-height: 150px;
+    flex-basis: 47%
+}
+
+.ContactInfo {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 14pt;
+    padding: 15px;
+}
