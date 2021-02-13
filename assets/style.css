@@ -16,6 +16,7 @@
 body {
     background-color: var(--ColorDarkBlue);
     color: var(--ColorTan);
+    
 }
 
 Header {
@@ -38,9 +39,29 @@ Header nav ul {
 
 Header nav ul li {
     font-size: 14pt;
+    text-decoration: underline;
     display: inline-block;
     margin-left: 25px;
     }
+
+/* a normal, unvisited link */
+a:link {
+    color: var(--ColorTan);
+}
+
+/* a link the user has visited */
+a:visited {
+    color: var(--ColorDarkBlue);
+}
+
+/* a link when the user hovers over it */
+a:hover {
+    color: #cdb3d4;
+}
+
+/* a link the moment it is clicked */
+a:active {
+    color: var(--ColorLightBlue);
 }
 
 .MainImage {
@@ -56,38 +77,85 @@ Header nav ul li {
     background-color: var(--ColorGreen);
     padding: 15px;
     margin: 20px;
+    border-radius: 20px;
 }
 
 .Work {
     background-color: var(--ColorGreen);
     padding: 15px;
     margin: 20px;
+    border-radius: 20px;
 }
 
 .Contact {
     background-color: var(--ColorGreen);
     padding: 15px;
     margin: 20px;
+    border-radius: 20px;
 }
 
 .MainProject {
-    background-color: var(--ColorLightBlue);
-    padding: 10px;
-    margin: 15px;
-    min-height: 200px;
+    display: flex;
 }
 
-.Project1 {
+.OtherProjects {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.Project2 {
+.trees {
+    background-image: url("../assets/Images/trees.jpg"); 
+    background-size: cover;
+    min-height: 200px;
+    margin: 20px;
+    width: 100%;
+}
+
+
+.water {
+    background-image: url("../assets/Images/water.jpg"); 
+    background-size: cover;
+    min-height: 200px;
+    margin: 20px;
+    width: 55%;
+}
+
+.mountain {
+    background-image: url("../assets/Images/mountain.jpg"); 
+    background-size: cover;
+    min-height: 200px;
+    margin: 20px;
+    width: 55%;
+}
+
+.plant {
+    background-image: url("../assets/Images/plant.jpg"); 
+    background-size: cover;
+    min-height: 200px;
+    margin: 20px;
+    width: 35%;
+}
+
+.flowers {
+    background-image: url("../assets/Images/flowers.jpg"); 
+    background-size: cover;
+    min-height: 200px;
+    margin: 20px;
+    width: 35%;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.Project {
     background-color: var(--ColorLightBlue);
     padding: 10px;
     margin: 15px;
-    min-height: 150px;
-    flex-basis: 47%
 }
 
 .ContactInfo {
