@@ -27,10 +27,6 @@ Header {
     align-items: center;
 }
 
-Header h1 {
-    font-family: ;
-}
-
 Header nav ul {
     display: flex;
     list-style: none;
@@ -64,6 +60,25 @@ a:active {
     color: var(--ColorLightBlue);
 }
 
+/* Settings for project links */
+.Work a:link {
+    color: var(--ColorTan);
+    text-decoration: none;
+}
+
+.Work a:visited {
+    color: var(--ColorTan);
+}
+
+.Work a:hover {
+    color: var(--ColorTan);
+}
+
+.Work a:active {
+    color: var(--ColorTan);
+}
+
+
 .MainImage {
     height: 200px;
     width: 100%;
@@ -73,24 +88,41 @@ a:active {
     background-position: center;
 }
 
+.MainImage Img {
+    border-radius: 50%;
+    border-color: var(--ColorTan);
+    border-style: solid;
+    height: 200px;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
 .About {
     background-color: var(--ColorGreen);
     padding: 15px;
-    margin: 20px;
+    margin: 30px;
     border-radius: 20px;
+}
+
+.About p {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 15px;
+    text-align: center;
 }
 
 .Work {
     background-color: var(--ColorGreen);
     padding: 15px;
-    margin: 20px;
+    margin: 30px;
     border-radius: 20px;
 }
 
 .Contact {
     background-color: var(--ColorGreen);
     padding: 15px;
-    margin: 20px;
+    margin: 30px;
     border-radius: 20px;
 }
 
@@ -123,8 +155,8 @@ a:active {
     width: 55%;
 }
 
-.mountain {
-    background-image: url("../assets/Images/mountain.jpg"); 
+.palm {
+    background-image: url("../assets/Images/palm.jpg"); 
     background-size: cover;
     min-height: 200px;
     margin: 20px;
@@ -158,10 +190,43 @@ a:active {
     margin: 15px;
 }
 
+.Project:hover {
+    border-style: solid;
+    border-color: #cdb3d4;
+    border-width: 5px;
+}
+
 .ContactInfo {
     display: flex;
     justify-content: space-around;
     list-style: none;
     font-size: 14pt;
     padding: 15px;
+}
+
+/* increase side margins when screen is large */
+@media screen and (min-width: 1500px) {
+    main {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    }
+
+/* stack project sections when screen is small */
+@media screen and (max-width: 870px) {
+    .water{
+        width: 100%
+    }
+
+    .palm{
+        width: 100%;
+    }
+
+    .plant {
+        width: 100%;
+    }
+
+    .flowers {
+        width: 100%;
+    }
 }
