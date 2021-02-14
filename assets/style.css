@@ -60,7 +60,7 @@ a:active {
     color: var(--ColorLightBlue);
 }
 
-/* Settings for project links */
+/* Settings for project links*/
 .Work a:link {
     color: var(--ColorTan);
     text-decoration: none;
@@ -88,6 +88,7 @@ a:active {
     background-position: center;
 }
 
+/* center personal photo with oval border */
 .MainImage Img {
     border-radius: 50%;
     border-color: var(--ColorTan);
@@ -179,6 +180,7 @@ a:active {
     width: 35%;
 }
 
+/* ensures projects 2-5 are on two lines */
 .break {
     flex-basis: 100%;
     height: 0;
@@ -190,6 +192,7 @@ a:active {
     margin: 15px;
 }
 
+/* add a border when the mouse hovers over a project link */
 .Project:hover {
     border-style: solid;
     border-color: #cdb3d4;
