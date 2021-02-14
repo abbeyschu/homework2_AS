@@ -9,9 +9,9 @@ Visit this link to view my portfolio page: https://abbeyschu.github.io/homework2
 
 ## Screenshot of Webpage
 
-![Image of Webpage](assets/images/PortfolioScreenshot.png)
+![Image of Webpage](../assets/images/PortfolioScreenshot.png)
 
 
 ## License 
 
-[MIT](https://github.com/abbeyschu/homework1_AS/raw/main/license.txt)
+[MIT](https://github.com/abbeyschu/homework2_AS/raw/main/license.txt)
